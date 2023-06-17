@@ -1,0 +1,34 @@
+Sequence Generator
+
+Source :- EMPLOYEES table.
+Target :- "CORE"."T_EMPLOYEES"
+
+Ex 1 :-
+Load every 4th record to the target.
+
+Used Transformations :- Filter, Seq generator
+wf_Load_every_4th_record
+
+
+Ex 2:-
+Load the seq records to 3 different tables.
+1st record to 1st table.
+2nd record to 2nd table.
+3rd record to 3rd table.
+4th record to 1st table.
+
+Used Transformations :- Router, Seq generator
+wf_Load_3_tables
+
+
+Ex 3:-
+Load the seq records to 3 different tables in reverse
+1st record to 1st table.
+2nd record to 2nd table.
+3rd record to 3rd table.
+4th record to 3rd table.
+5th record to 2nd table.
+6th record to 1st table.
+
+Used Transformations :- Router, Seq generator
+wf_Load_3_table_reverse
